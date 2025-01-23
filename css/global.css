@@ -2,16 +2,18 @@
 
 /* Importa FontAwesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
 /* Definições de estilo */
 :root {
-    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-padrao: "Questrial", serif;
     --font-tamanho: 16
     px;
-    --cor-do-fundo: rgb(172, 137, 104);
-    --cor-link-padrao: rgb(255, 255, 255);
-    --cor-link-hover: rgb(119, 58, 43);
-    --font-titulo: "Moo Lah Lah", serif;
+    --cor-do-fundo: rgb(255, 255, 255);
+    --cor-link-padrao: rgb(104, 51, 20);
+    --cor-link-hover: rgb(0, 0, 0);
+    --font-titulo: "Questrial", serif;
 }
 
 
@@ -59,22 +61,28 @@ form button {
 
 body {
     background-color: var(--cor-do-fundo);
-
+    background-image: url('../img/bg01.png');
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+/* Estrutura da página */
 
 #wrap {
     display: flex;
     flex-direction: column;
-}
-
-main {
-    flex-grow: 1;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
 }
 
 /* Cabeçalho → <header> */
 
 header {
     background-color: #8d4321;
+    display: flex;
+    flex-direction: column;
 }
 
 header img {
@@ -117,7 +125,7 @@ header form button {
 /* Menu principal */
 
 nav {
-    background-color: rgb(255, 243, 221);
+    background-color: rgb(180, 140, 121);
     display: flex;
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
@@ -158,7 +166,7 @@ nav span {
 
 main {
     flex-grow: 1;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 0 1rem;
     line-height: 1.3;
     border-top: 1px solid #000;
@@ -196,6 +204,7 @@ footer>div div {
     margin-top: .35rem;
 }
 
+/* Para larguras de 640px ou mais */
 @media screen and (min-width: 640px) {
 
     header {
