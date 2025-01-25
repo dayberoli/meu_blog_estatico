@@ -8,8 +8,7 @@
 /* Definições de estilo */
 :root {
     --font-padrao: "Questrial", serif;
-    --font-tamanho: 16
-    px;
+    --font-tamanho: 16px;
     --cor-do-fundo: rgb(255, 255, 255);
     --cor-link-padrao: rgb(104, 51, 20);
     --cor-link-hover: rgb(0, 0, 0);
@@ -29,6 +28,7 @@ body,
 #wrap {
     position: relative;
     height: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
     font-family: var(--font-padrao);
@@ -127,9 +127,10 @@ header form button {
 nav {
     background-color: rgb(180, 140, 121);
     display: flex;
-    border-top: 2px solid rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-top: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
     justify-content: flex-end;
+
 }
 
 nav img {
